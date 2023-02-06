@@ -1,0 +1,324 @@
+body {
+margin: 0px;
+}
+
+#cellphone-nav{
+    display: none;
+}
+
+#div-bienvenidos {
+    background-image:url(./images/fondo-bienvenido-grande.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 900px;
+}
+
+#div-quienes-somos {
+    background-color: #EF5E3F;
+    height: 750px;
+}
+
+#div-quienes-somos, #pon-contacto, .fotos-servicios, .nav-link:hover {
+    animation-iteration-count: infinite;
+    animation-duration: 4s;
+    animation-name: cambios-fondo;
+
+}
+
+@keyframes cambios-fondo {
+
+    0%,100% {
+        background-color:#EF5E3F;
+        border: solid #EF5E3F;
+    }
+    50%{
+        background-color: rgb(255, 0, 85);
+        border: solid rgb(255, 0, 85);
+    }
+
+}
+
+#div-nuestros-servicios {
+    background-color: azure;
+    color: black;
+    height: 700px;
+}
+
+#div-ultimos-proyectos {
+ background-color: rgb(73, 73, 73);
+ height: 700px;
+}
+
+#div-copyright {
+    background-color: rgb(39, 39, 39);
+    padding: 20px;
+}
+
+.divisiones-princiapal, #principal-nav, #servicios, .trio-proyectos {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+.header{
+    justify-content: flex-start;
+    display: flex;
+    flex-direction: row;
+}
+
+.divisiones-princiapal {
+    color: azure;
+    flex-direction: column;
+}
+
+.divisiones-princiapal, .tecto-servicio{
+    padding-top: 0;
+    padding-bottom: 0;
+    margin: 0;
+}
+
+.header {
+    position: fixed;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.75);
+    justify-content: space-around;
+    color: rgb(255, 255, 255);
+}
+
+#menu-img{
+    height: 40px;
+}
+
+#molde{
+    display: flex;
+    justify-content: center;
+}
+
+
+nav, li, ul {
+    text-decoration:none;
+    list-style:none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+ul>li{
+    float: left;
+}
+
+ul{
+    display: none;
+}
+
+li:hover > ul{
+    display: flex;
+}
+
+.nav-link {
+    color: rgb(255, 255, 255);
+    margin: 10px;
+    padding: 5px;
+}
+
+.nav-link:hover {
+    color: rgb(255, 255, 255);
+    background-color: #EF5E3F;
+    border-radius: 10px;
+}
+
+.titulo-h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#foto-nosotros {
+    width: 300px;
+    padding: 20px;
+}
+
+.foto-proyecto {
+    width: 300px;
+
+}
+
+#ult-pry, #nuestros-proy{
+    padding: 15px;
+    font-size: 45px;
+    margin: 20px;
+}
+
+p,h2,h1,h3,a{
+    font-family: Arial;
+}
+
+a{
+    text-decoration: none;
+}
+
+p,h2,h1,img #welcome{
+    animation-duration: 2s;
+    animation-name: aparicion-text;
+    text-align: center;
+}
+
+@keyframes aparicion-text {
+    from {
+        margin-bottom: 1000%;
+      }
+    
+      to {
+        margin-top: 0%;
+      }
+}
+
+#texto-presentacion{
+ width: 600px;
+ text-align: center;
+}
+
+#proyecto1, #proyecto2, #proyecto3, #proyecto4, #proyecto5, #proyecto6 {
+    transition: transform .2s;
+}
+
+#proyecto1:hover, #proyecto2:hover, #proyecto3:hover, #proyecto4:hover, #proyecto5:hover, #proyecto6:hover {
+    transform: scale(1.2);
+    object-fit: contain;
+}
+
+.container{
+    margin: 20px;
+    width: 300px;
+    height: 215px;
+    overflow: hidden;
+}
+
+.boton-pagina{
+    box-sizing: border-box;
+    font-size: 20px;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    transition: transform .2s;
+    cursor: pointer;
+}
+
+.boton-pagina:hover{
+    transform: scale(1.2);
+}
+
+#pon-contacto {
+background-color: #EF5E3F;
+color: aliceblue;
+border: solid #EF5E3F;
+cursor:pointer;
+}
+
+#mas-info {
+background-color: aliceblue;
+border: solid aliceblue;
+}
+
+h1 {
+    font-size: 70px;
+}
+
+#welcome {
+font-size: 30px;
+}
+
+#servicios {
+    text-align: center;
+}
+
+.fotos-servicios{
+    width: 150px;
+}
+
+.div-ind-servicios{
+    margin: 10px;
+    width: 350px;
+}
+
+.tecto-servicio{
+    font-size: 25px;
+    margin: 25px;
+}
+
+#nuestros-proy {
+    margin-bottom: 60px;
+}
+
+#menu-img{
+    height: 40px;
+}
+
+@media (max-width: 900px){
+    .div-ind-servicios{
+        width: 260px;
+    }
+
+    .foto-proyecto {
+        width: 250px;
+    }
+
+    .container{
+        margin: 15px;
+        width: 250px;
+        height: 179px;
+    }
+}
+
+@media (max-width: 460px){
+    #div-bienvenidos {
+        background-image:url(./images/fondo-bienvenidos.jpg);
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    #texto-presentacion {
+        width: 320px;
+    }
+
+    #div-nuestros-servicios {
+        height: 1600px;
+    }
+
+    #servicios{
+        flex-direction: column;
+    }
+
+    .trio-proyectos{
+        flex-direction: column;
+    }
+
+    #div-ultimos-proyectos {
+        height: 1800px;
+       }
+
+    .div-ind-servicios{
+        margin: 10px;
+        width: 350px;
+    }
+
+    .foto-proyecto {
+        width: 300px;
+    }
+
+    .container{
+        margin: 20px;
+        width: 300px;
+        height: 215px;
+    }
+
+    #cellphone-nav{
+        display: flex;
+    }
+    #principal-nav{
+        display: none;
+    }
+}
