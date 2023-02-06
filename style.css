@@ -255,7 +255,7 @@ font-size: 30px;
     height: 40px;
 }
 
-@media (max-width: 900px){
+@media (max-width: 1000px){
     .div-ind-servicios{
         width: 260px;
     }
@@ -268,6 +268,22 @@ font-size: 30px;
         margin: 15px;
         width: 250px;
         height: 179px;
+    }
+}
+
+@media (max-width: 850px){
+    .div-ind-servicios{
+        width: 260px;
+    }
+
+    .foto-proyecto {
+        width: 200px;
+    }
+
+    .container{
+        margin: 10px;
+        width: 200px;
+        height: 146px;
     }
 }
 
